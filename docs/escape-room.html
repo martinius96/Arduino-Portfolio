@@ -1,0 +1,616 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta name='revisit-after' content='2 days'>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <meta name="google-site-verification" content="99geZzMQuCEbWS3wtRt2Ih_ZkECtd4vqbYD2U0K-oOU" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property='fb:admins' content='100001242570317'>
+    <link rel="icon" type="image/png" href="favicon.png">
+	<script type="text/javascript">
+    window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'db50efe9fff280a17db52b82be221240cbbd3dbe');
+</script>
+ 
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-76290977-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-76290977-2');
+</script>
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    -->                <meta name="description" content="Úniková hra založená na platforme Arduino s Ethernetom pre komunikáciu s webserverom pre overenie číselného vstupu od hráča.">
+    <meta name="keywords" content="arduino, ethernet, webclient, úniková, hra, game, escape, room, čísla, vstup, kombinácia, lock, dvere, postup, server, php, html, mysql"> 
+    <title>Úniková hra - Webclient - Arduino</title>
+  </head>
+  <body class="sidebar-mini fixed">
+    <div class="wrapper">
+      <!-- Navbar-->
+      <header class="main-header hidden-print"><a class="logo" href="index.php">Arduino/NodeMCU</a>
+        <nav class="navbar navbar-static-top"><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
+         
+        </nav>
+      </header>
+      <aside class="main-sidebar hidden-print">
+        <section class="sidebar">
+          <div class="user-panel">
+          
+          
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}</style>
+<div class="alert alert-danger">
+  <strong>Stránka končí<br>31. Augusta 2020<br>Ďakujem za podporu.</strong></div>
+<ul class="sidebar-menu">
+<center>
+<a href="?lang=sk"><img src="https://futbalovysen.sk/wp-content/uploads/slovakia.png" alt="Slovak flag.png, 2,2kB" title="Slovakia" height="32" width="32"></a>
+<a href="?lang=en"><img src="https://i2.wp.com/facsusa.com/wp-content/uploads/2017/05/Flag-of-England.png?ssl=1" alt="English.png, 2,2kB" title="English" height="32" width="32"></a>
+<a href="?lang=de"><img src="https://futbalovysen.sk/wp-content/uploads/germany.png" alt="Germany.png, 2,2kB" title="Germany" height="32" width="32"></a>
+<a href="?lang=ru"><img src="https://futbalovysen.sk/wp-content/uploads/russia.png" alt="russia.png, 2,2kB" title="Russia" height="32" width="32"></a></center>
+<li class=""><a href="index.php"><img src="https://image.flaticon.com/icons/svg/236/236822.svg" width=32px height=32px><span> O stránke</span></a></li>
+<li class="treeview"><a href="#"><img src="https://embeltech.weebly.com/uploads/1/1/2/5/11253403/106258_orig.jpg" width=48px height=48px style="border-radius: 50%;"><span> Arduino Nano</span><i class="fa fa-angle-right"></i></a>
+<ul class="treeview-menu">                                       
+        <li><a href="escape-room.php"><img src="https://image.flaticon.com/icons/svg/981/981084.svg" width=32px height=32px> Escape Room</a></li>
+				<li><a href="airsoft-wifi.php"><img src="https://image.flaticon.com/icons/svg/588/588853.svg" width=32px height=32px> Airsoft - WiFi body</a></li>
+        <li><a href="ir-rele.php"><img src="https://image.flaticon.com/icons/svg/1581/1581348.svg" width=32px height=20px> IR ovládanie</a></li> 
+        <li><a href="ir-laser-game.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/1794/1794519.svg" width=32px height=20px> IR "LASER" GAME</a></li>
+				<li><a href="otackomer.php"><img src="https://image.flaticon.com/icons/svg/1184/1184740.svg" width=32px height=20px> Otáčkomer</a></li>   
+         </ul>
+          </li>
+<li class="treeview"><a href="#"><img src="https://rukminim1.flixcart.com/image/128/128/j7z2wsw0/electronic-hobby-kit/e/q/b/arduino-uno-prako-technocratz-original-imaey3n7rwrabzy4.jpeg?q=70" width=48px height=48px style="border-radius: 50%;"><span> Arduino Uno</span><i class="fa fa-angle-right"></i></a>
+         <ul class="treeview-menu">
+        <li><a href="register-74hc595.php"><img src="https://image.flaticon.com/icons/svg/2339/2339029.svg" width=32px height=32px> Shift 74HC595</a></li>
+        <li><a href="ovladanie-hlasom.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/279/279526.svg" width=32px height=32px> Ovládanie hlasom</a></li>
+				<li><a href="google-maps-bicyklovanie.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/354/354549.svg" width=32px height=32px> Bicyklovanie - Google mapy</a></li>
+				<li><a href="airsoft-dominator.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/897/897885.svg" width=32px height=32px> NFC DOMINATOR</a></li>
+				<li><a href="meteostanica-arduino.php"><img src="https://image.flaticon.com/icons/svg/789/789395.svg" width=32px height=20px> Meteostanica Arduino</a></li>
+				<li><a href="mailer.php"><img src="https://image.flaticon.com/icons/svg/1021/1021966.svg" width=32px height=20px> Notifikátor udalostí</a></li>
+        <li><a href="vcelarska-vaha.php"><img src="https://image.flaticon.com/icons/svg/1616/1616460.svg" width=32px height=20px> Včelárska váha</a></li>
+        <li><a href="mastermind-arduino.php"><img src="https://image.flaticon.com/icons/svg/1314/1314281.svg" width=32px height=20px> Logik</a></li>
+        <li><a href="studna-voda.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/1676/1676808.svg" width=32px height=20px> Hladinomer - výška hladiny vody</a></li>
+        <li><a href="hasicske-stopky.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/1684/1684511.svg" width=32px height=20px> Hasičské stopky</a></li>
+				 </ul>
+                </li>
+          <li class="treeview"><a href="#"><img src="https://pm1.narvii.com/6052/d9bdb57779064c049417a20fae9db13233cdd3c5_128.jpg" width=48px height=48px style="border-radius: 50%;"><span> Arduino Mega 2560</span><i class="fa fa-angle-right"></i></a>
+                  <ul class="treeview-menu">
+				<li><a href="monitor-teploty-vlhkosti-v-domacnosti.php"><img src="https://image.flaticon.com/icons/svg/1035/1035526.svg" width=32px height=32px> Monitor domácnosti</a></li>
+        <li><a href="ovladanie-rele.php"><img src="https://image.flaticon.com/icons/svg/527/527475.svg" width=32px height=32px> Statické relé</a></li>
+				<li><a href="tyzdenne-rele.php"><img src="https://image.flaticon.com/icons/svg/889/889754.svg" width=32px height=32px> Týždenné relé</a></li>
+        <li><a href="ovladanie-zavlahy.php"><img src="https://image.flaticon.com/icons/svg/952/952635.svg" width=32px height=20px> Ovládanie závlahy</a></li>
+				 </ul>
+          </li>
+          <li class="treeview"><a href="#"><img src="https://arduino.php5.sk/images/basekit.jpg" width=40px height=40px style="border-radius: 50%;"><span> NodeMCU</span><i class="fa fa-angle-right"></i></a>
+            <ul class="treeview-menu">
+				   <li><a href="autonomne-vykurovanie.php"><img src="https://image.flaticon.com/icons/svg/197/197733.svg" width=32px height=32px> Autonómne vykurovanie</a></li>
+				   <li><a href="ovladanie-hlasom.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/279/279526.svg" width=32px height=32px> Ovládanie hlasom</a></li>
+				   <li><a href="amazon-hlasove-ovladanie.php"><img src="https://image.flaticon.com/icons/svg/810/810314.svg" width=32px height=32px> Ovládanie hlasom Amazon</a></li>
+           <li><a href="meteostanica-nodemcu.php"><img src="https://image.flaticon.com/icons/svg/789/789395.svg" width=32px height=20px> Meteostanica ESP</a></li>
+				   <li><a href="wifi-teplomer.php"><img src="https://image.flaticon.com/icons/svg/178/178337.svg" width=32px height=20px> Wifi teplomer</a></li>
+				   <li><a href="web-scraper.php"><img src="https://image.flaticon.com/icons/svg/334/334241.svg" width=32px height=20px> Web scraper</a></li>
+				   <li><a href="rfid-system.php"><img src="https://image.flaticon.com/icons/svg/1110/1110774.svg" width=32px height=20px> RFID - vrátnik</a></li>
+           <li><a href="voice-car-esp8266.php"><img src="https://image.flaticon.com/icons/svg/1519/1519408.svg" width=32px height=20px> Hlasové RC auto</a></li>
+           <li><a href="opc-ua-esp8266.php"><img src="https://image.flaticon.com/icons/png/512/2198/premium/2198749.png" width=32px height=20px> OPC UA</a></li>
+				  </ul>
+                </li>
+                <li class="treeview"><a href="#"><img src="https://images.ua.prom.st/785300776_w128_h128_wifi-bluetooth-modul.jpg" width=40px height=40px style="border-radius: 50%;"><span> ESP32</span><i class="fa fa-angle-right"></i></a>
+				 <ul class="treeview-menu">
+   				<li><a href="wpa2-enterprise.php"><img src="https://image.flaticon.com/icons/svg/139/139754.svg" width=32px height=32px><span> 802.1x (WPA2 Enterprise)</span></a></li>
+				<li><a href="ovladanie-hlasom.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/279/279526.svg" width=32px height=32px> Ovládanie hlasom</a></li>
+        <li><a href="meteostanica-esp32.php"><img src="https://image.flaticon.com/icons/svg/789/789395.svg" width=32px height=20px> Meteostanica ESP</a></li>
+        <li><a href="udp-control-esp32.php"><img src="https://image.flaticon.com/icons/svg/179/179940.svg" width=32px height=20px> Ovládanie (UDP) ESP32</a></li>
+        <li><a href="ble-beacon-esp32.php"><img src="https://image.flaticon.com/icons/svg/3076/3076391.svg" width=32px height=20px> BLE Beacon</a></li>
+       
+				</ul>
+                </li>
+			
+				
+                 <li class="treeview"><a href="#"><img src="https://image.flaticon.com/icons/svg/888/888846.svg" width=40px height=40px><span> Webové projekty</span><i class="fa fa-angle-right"></i></a>
+                  <ul class="treeview-menu">
+       	<li><a href="hardverova-aplikacia.php"><img src="https://image.flaticon.com/icons/svg/141/141009.svg" width=32px height=32px> Hardvérová aplikácia</a></li>
+				<li><a href="meteostanice-online.php"><img src="https://image.flaticon.com/icons/svg/861/861059.svg" width=32px height=32px> Meteostanice - multiuser</a></li>
+				<li><a href="vykurovanie-online.php"><img src="https://image.flaticon.com/icons/svg/150/150393.svg" width=32px height=32px> Vykurovanie - multiuser</a></li>	
+        <li><a href="stav-servera.php"><img src="https://image.flaticon.com/icons/svg/291/291207.svg" width=32px height=32px> Server status</a></li>	
+        <li><a href="generator-osemsmerovka.php"><img src="https://image.flaticon.com/icons/svg/1872/1872142.svg" width=32px height=32px> Generátor - osemsmerovka</a></li>
+			   </ul>
+                </li>
+               	 
+				 <li class="treeview"><a href="#"><img src="https://image.flaticon.com/icons/svg/148/148908.svg" width=40px height=40px><span> Iné</span><i class="fa fa-angle-right"></i></a>
+                  <ul class="treeview-menu">
+				<li><a href="radius-server.php"><img src="https://image.flaticon.com/icons/svg/140/140994.svg" width=32px height=32px><span> RADIUS server</span></a></li>
+				<li><a href="karel-scitanie-odcitanie.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/1361/1361990.svg" width=32px height=32px><span> Robot Karel - odčítanie</span></a></li>	
+        <li><a href="xtime.php"><img src="https://image.flaticon.com/icons/svg/1634/1634874.svg" width=32px height=32px><span> Xtime - kalkulačka</span></a></li>
+        <li><a href="e-book.php"><img src="https://image.flaticon.com/icons/svg/167/167756.svg" width=32px height=32px><span> E-books (Arduino, ESP)</span></a></li>    
+        <li><a href="bitove-roviny.php"><img src="https://image.flaticon.com/icons/svg/181/181541.svg" width=32px height=32px> Šum v 8-bit. obrázkoch</a></li>
+        <li><a href="vzorkovanie-signalu.php"><img src="https://image.flaticon.com/icons/png/512/1061/premium/1061485.png" width=32px height=32px> Vzorkovanie signálu</a></li>
+        <li><a href="frekvencne-spektrum.php"><img src="https://image.flaticon.com/icons/png/512/137/137095.png" width=32px height=32px> Frekvenčné spektrum</a></li>
+				  </ul>
+                </li>
+            </li>
+            	<li class=""><a href="clanky.php"><img src="https://www.flaticon.com/premium-icon/icons/svg/2043/2043636.svg" width=32px height=32px style="border-radius: 50%;"><span> Články</span></a></li>	
+    <!---	<li class=""><a href="kontakt.php"><img src="https://image.flaticon.com/icons/svg/228/228612.svg" width=32px height=32px style="border-radius: 50%;"><span> Kontakt</span></a></li>	  -->
+         <li><a href="https://paypal.me/chlebovec/5"><img src="https://www.flaticon.com/premium-icon/icons/svg/2391/2391718.svg" width=32px height=32px><img src="https://image.flaticon.com/icons/svg/196/196565.svg" width=50% height=40px><img src="https://www.flaticon.com/premium-icon/icons/svg/677/677072.svg" width=32px height=32px></a></li>
+          </ul>     
+          
+          
+        </section>
+      </aside>
+      <div class="content-wrapper">
+        <div class="page-title">
+          <div>
+          
+            
+          </div>
+          <div>
+            <ul class="breadcrumb">
+              <li><i class="fa fa-home fa-lg"></i></li>
+              <li><a href="escape-room.php">Escape Room</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+<div class="card">	
+<span class="label label-default">Arduino</span>
+<span class="label label-primary">Ethernet</span>
+<span class="label label-success">Escape Room</span>
+<span class="label label-info">Numbers</span>
+<span class="label label-warning">LCD</span>
+<span class="label label-danger">Combination</span>
+<span class="label label-default">Interactive</span>
+<hr><center><h3>Úniková hra - Webclient - Arduino</h3></center><hr>
+<h4>Popis hardvéru:</h4>
+<li>Arduino Nano / Uno / Arduino Mega 2560</li>
+<li>Ethernet shield Wiznet W5100</li>
+<li>5x spínacie tlačidlo</li>
+<li>LCD displej 16x2 / 20x4</li> 
+<li>I2C prevodník pre LCD displej</li>
+<li>Elektromagnetické relé SRD-05VDC-SL-C / SSR relé OMRON G3MB-202P</li> 
+<li>Solenoidový zámok dverí 12/24V</li> 
+<h4>Popis funkčnosti:</h4> 
+<li>Hráč má k dispozícii 5 tlačidiel pre číselný vstup.</li>
+<li>Štyrmi tlačidlami hráč inkrementuje číslo na každej zo štyroch pozícii.</li>
+<li>Piatym tlačidlom sú dáta odoslané na webserver, ktorý vráti payload Access / Problem.</li>
+<li>V prípade "Access" payloadu (odpovede) sa aktivuje relé a solenoidový zámok dverí sa otvorí - hráčom sa umožní pohyb ďalej v hre, indikuje zelená dióda.</li>
+<li>V prípade payloadu "Problem" ostáva relé v rozpojenom stave, zámok sa neotvorí. Dvere nie je možné otvoriť. </li>
+<li>Hráč môže byť informovaný o neúspechu aj bzučiakom, alebo LED diódou s indikáciou.</li>
+<li>Hráč dokáže zadať číslo maximálne 10 krát. Pokusy sa rátajú client-side.</li>
+<img src="https://i.imgur.com/OidqbzI.jpg" style="display: block; max-width: 100%; height: auto;" alt="Escape Room - Arduino + Ethernet, Webclient - výhra hráča" title="Escape Room - Arduino + Ethernet, Webclient - výhra hráča">	
+<h4>Implementácie:</h4>
+<li><b>Jedno číslo:</b> - tlačidlami 1-5 sa odošle číslo (1,2,3,4,5), pričom jedno z nich je správne. Max. 5 kombinácii, neobsahuje tlačidlo enter.</li>
+<li><b>Štyri čísla s opakovaním:</b> - tlačidlami 1-4 sa inkrementuje číslo v rozsahu 0-9 pre každú zo štyroch pozícii s možnosťou opakovania. Max. 10 000 kombinácii.</li>
+<li><b>Štyri čísla bez opakovania:</b> - Implementácia bez opakovania čísel (funkčnosť ako pri Štyri čísla s opakovaním), max 5040 kombinácii.</li>
+<h4>Webové rozhranie:</h4>
+<li>Webové rozhranie ponúka možnosť upraviť hľadané číslo v každej z troch implementácii (možno používať súčasne). </li>
+<li>Zohľadňuje obmedzenie všetkých implementácii (opakovanie, dĺžka číselného kódu).</li>
+<li>Možno zmeniť prihlasovacie údaje. Možno zapnúť logovanie a štatistiku prijatých dát od mikrokontroléru Arduino. Štatistika úspešnosti hráčov so záznamom prijatých číselných kombinácii, časov prijatia.</li>
+<h3>Schéma zapojenia:</h3>
+			
+<img src="https://i.imgur.com/4JS3BkA.png" style="display: block; max-width: 100%; height: auto;" alt="Schéma zapojenia - Escape Room - Arduino + Ethernet, Webclient" title="Schéma zapojenia - Escape Room - Arduino + Ethernet, Webclient">	
+<h3>Block scheme</h3>
+<img src="https://i.imgur.com/NzUhpyn.jpg" style="display: block; max-width: 100%; height: auto;" alt="Bloková schéma - Escape Room - Arduino + Ethernet, Webclient" title="Bloková schéma - Escape Room - Arduino + Ethernet, Webclient">	
+<h3><font color="#3498DB">Arduino + Ethernet W5100 program:</font></h3>
+<pre style="background-color:#3498DB;">
+/*|----------------------------------------------------------|*/
+/*|SKETCH FOR ESCAPE ROOM - Arduino + Ethernet W5100         |*/
+/*|Author: Bc. MARTIN CHLEBOVEC                              |*/
+/*|FB: https://www.facebook.com/martin.s.chlebovec           |*/
+/*|EMAIL: martinius96@gmail.com                              |*/
+/*|WEB: https://arduino.php5.sk?lang=en                      |*/
+/*|----------------------------------------------------------|*/
+#include &lt;SPI.h>
+#include &lt;Ethernet.h>
+
+byte mac[] = { 0xAA, 0xBB, 0xCC, 0xAA, 0xBB, 0xCC };
+IPAddress ip(192, 168, 1, 101);
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 255, 0);
+char serverName[] = "192.168.1.254"; //or hostname
+int serverPort = 80;
+
+const int buttonPin1 = 9;
+const int buttonPin2 = 8;
+const int buttonPin3 = 7;
+const int buttonPin4 = 6;
+const int buttonPin5 = 5;
+const int relay = 3;
+
+int buttonState1 = HIGH;
+int buttonState2 = HIGH;
+int buttonState3 = HIGH;
+int buttonState4 = HIGH;
+int buttonState5 = HIGH;
+
+int lastButtonState1 = HIGH;
+int lastButtonState2 = HIGH;
+int lastButtonState3 = HIGH;
+int lastButtonState4 = HIGH;
+int lastButtonState5 = HIGH;
+
+unsigned long lastDebounceTime1 = 0;
+unsigned long lastDebounceTime2 = 0;
+unsigned long lastDebounceTime3 = 0;
+unsigned long lastDebounceTime4 = 0;
+unsigned long lastDebounceTime5 = 0;
+unsigned long debounceInterval = 50;
+
+
+
+EthernetClient client;
+int number = 0;
+String url = "/sendnumber.php";
+void setup() {
+  Serial.begin(115200);
+  pinMode(relay, OUTPUT);
+  digitalWrite(relay, HIGH); //lock door
+  pinMode(buttonPin1, INPUT_PULLUP);
+  pinMode(buttonPin2, INPUT_PULLUP);
+  pinMode(buttonPin3, INPUT_PULLUP);
+  pinMode(buttonPin4, INPUT_PULLUP);
+  pinMode(buttonPin5, INPUT_PULLUP);
+  Ethernet.begin(mac, ip, gateway, gateway, subnet);
+  Serial.println("IP address set to Ethernet shield:");
+  Serial.println(Ethernet.localIP());
+  delay(2000);
+  Serial.println("Ready");
+}
+
+void send_datas() {
+  String my_datas = String(number);
+  String data = "number=" + my_datas;
+  if (client.connect(serverName, serverPort)) {
+    client.println("POST " + url + " HTTP/1.0");
+    client.println("Host: " + (String)serverName);
+    client.println("User-Agent: ArduinoEthernetWiznet");
+    client.println("Connection: close");
+    client.println("Content-Type: application/x-www-form-urlencoded;");
+    client.print("Content-Length: ");
+    client.println(data.length());
+    client.println();
+    client.println(data);
+    while (client.connected()) {
+      //HTTP HEADER
+      String line = client.readStringUntil('\n'); //HTTP header
+      if (line == "\r") {
+        break; //blank line between HTTP header and payload
+      }
+    }
+    String line = client.readStringUntil('\n'); //Payload first line
+    if (line == "Access") {
+      Serial.println("Access gained!");
+      digitalWrite(relay, LOW); //unlock door to next level
+    } else {
+      Serial.println("Access denied!");
+      digitalWrite(relay, HIGH); //lock door
+    }
+  } else {
+    Serial.println("Error connecting to webserver!");
+  }
+  client.stop();
+}
+
+void loop() {
+  int reading1 = digitalRead(buttonPin1);
+  int reading2 = digitalRead(buttonPin2);
+  int reading3 = digitalRead(buttonPin3);
+  int reading4 = digitalRead(buttonPin4);
+  int reading5 = digitalRead(buttonPin5);
+
+  if (reading1 != lastButtonState1) {
+    lastDebounceTime1 = millis();
+  }
+
+  if (reading2 != lastButtonState2) {
+    lastDebounceTime2 = millis();
+  }
+
+  if (reading3 != lastButtonState3) {
+    lastDebounceTime3 = millis();
+  }
+
+  if (reading4 != lastButtonState4) {
+    lastDebounceTime4 = millis();
+  }
+
+  if (reading5 != lastButtonState5) {
+    lastDebounceTime5 = millis();
+  }
+  if ((millis() - lastDebounceTime1) > debounceInterval) {
+    if (reading1 != buttonState1) {
+      buttonState1 = reading1;
+      if (buttonState1 == HIGH) {
+        number = 1;
+        send_datas();
+      }
+    }
+  }
+
+  if ((millis() - lastDebounceTime2) > debounceInterval) {
+    if (reading2 != buttonState2) {
+      buttonState2 = reading2;
+      if (buttonState2 == HIGH) {
+        number = 2;
+        send_datas();
+      }
+    }
+  }
+
+  if ((millis() - lastDebounceTime3) > debounceInterval) {
+    if (reading3 != buttonState3) {
+      buttonState3 = reading3;
+      if (buttonState3 == HIGH) {
+        number = 3;
+        send_datas();
+      }
+    }
+  }
+
+  if ((millis() - lastDebounceTime4) > debounceInterval) {
+    if (reading4 != buttonState4) {
+      buttonState4 = reading4;
+      if (buttonState4 == HIGH) {
+        number = 4;
+        send_datas();
+      }
+    }
+  }
+  if ((millis() - lastDebounceTime5) > debounceInterval) {
+    if (reading5 != buttonState5) {
+      buttonState5 = reading5;
+      if (buttonState5 == HIGH) {
+        number = 5;
+        send_datas();
+      }
+    }
+  }
+  lastButtonState1 = reading1;
+  lastButtonState2 = reading2;
+  lastButtonState3 = reading3;
+  lastButtonState4 = reading4;
+  lastButtonState5 = reading5;
+
+}
+</pre>    
+<h3><font color="#2ECC71">Arduino + Ethernet W5500 program:</font></h3>
+<pre style="background-color:#2ECC71;">
+/*|----------------------------------------------------------|*/
+/*|SKETCH FOR ESCAPE ROOM - Arduino + Ethernet W5500         |*/
+/*|Author: Bc. MARTIN CHLEBOVEC                              |*/
+/*|FB: https://www.facebook.com/martin.s.chlebovec           |*/
+/*|EMAIL: martinius96@gmail.com                              |*/
+/*|WEB: https://arduino.php5.sk?lang=en                      |*/
+/*|----------------------------------------------------------|*/
+#include &lt;SPI.h>
+#include &lt;Ethernet2.h>
+
+byte mac[] = { 0xAA, 0xBB, 0xCC, 0xAA, 0xBB, 0xCC };
+IPAddress ip(192, 168, 1, 101);
+IPAddress gateway(192, 168, 1, 1);
+IPAddress subnet(255, 255, 255, 0);
+char serverName[] = "192.168.1.254"; //or hostname
+int serverPort = 80;
+
+const int buttonPin1 = 9;
+const int buttonPin2 = 8;
+const int buttonPin3 = 7;
+const int buttonPin4 = 6;
+const int buttonPin5 = 5;
+const int relay = 3;
+
+int buttonState1 = HIGH;
+int buttonState2 = HIGH;
+int buttonState3 = HIGH;
+int buttonState4 = HIGH;
+int buttonState5 = HIGH;
+
+int lastButtonState1 = HIGH;
+int lastButtonState2 = HIGH;
+int lastButtonState3 = HIGH;
+int lastButtonState4 = HIGH;
+int lastButtonState5 = HIGH;
+
+unsigned long lastDebounceTime1 = 0;
+unsigned long lastDebounceTime2 = 0;
+unsigned long lastDebounceTime3 = 0;
+unsigned long lastDebounceTime4 = 0;
+unsigned long lastDebounceTime5 = 0;
+unsigned long debounceInterval = 50;
+
+
+
+EthernetClient client;
+int number = 0;
+String url = "/sendnumber.php";
+void setup() {
+  Serial.begin(115200);
+  pinMode(relay, OUTPUT);
+  digitalWrite(relay, HIGH); //lock door
+  pinMode(buttonPin1, INPUT_PULLUP);
+  pinMode(buttonPin2, INPUT_PULLUP);
+  pinMode(buttonPin3, INPUT_PULLUP);
+  pinMode(buttonPin4, INPUT_PULLUP);
+  pinMode(buttonPin5, INPUT_PULLUP);
+  Ethernet.begin(mac, ip, gateway, gateway, subnet);
+  Serial.println("IP address set to Ethernet shield:");
+  Serial.println(Ethernet.localIP());
+  delay(2000);
+  Serial.println("Ready");
+}
+
+void send_datas() {
+  String my_datas = String(number);
+  String data = "number=" + my_datas;
+  if (client.connect(serverName, serverPort)) {
+    client.println("POST " + url + " HTTP/1.0");
+    client.println("Host: " + (String)serverName);
+    client.println("User-Agent: ArduinoEthernetWiznet");
+    client.println("Connection: close");
+    client.println("Content-Type: application/x-www-form-urlencoded;");
+    client.print("Content-Length: ");
+    client.println(data.length());
+    client.println();
+    client.println(data);
+    while (client.connected()) {
+      //HTTP HEADER
+      String line = client.readStringUntil('\n'); //HTTP header
+      if (line == "\r") {
+        break; //blank line between HTTP header and payload
+      }
+    }
+    String line = client.readStringUntil('\n'); //Payload first line
+    if (line == "Access") {
+      Serial.println("Access gained!");
+      digitalWrite(relay, LOW); //unlock door to next level
+    } else {
+      Serial.println("Access denied!");
+      digitalWrite(relay, HIGH); //lock door
+    }
+  } else {
+    Serial.println("Error connecting to webserver!");
+  }
+  client.stop();
+}
+
+void loop() {
+  int reading1 = digitalRead(buttonPin1);
+  int reading2 = digitalRead(buttonPin2);
+  int reading3 = digitalRead(buttonPin3);
+  int reading4 = digitalRead(buttonPin4);
+  int reading5 = digitalRead(buttonPin5);
+
+  if (reading1 != lastButtonState1) {
+    lastDebounceTime1 = millis();
+  }
+
+  if (reading2 != lastButtonState2) {
+    lastDebounceTime2 = millis();
+  }
+
+  if (reading3 != lastButtonState3) {
+    lastDebounceTime3 = millis();
+  }
+
+  if (reading4 != lastButtonState4) {
+    lastDebounceTime4 = millis();
+  }
+
+  if (reading5 != lastButtonState5) {
+    lastDebounceTime5 = millis();
+  }
+  if ((millis() - lastDebounceTime1) > debounceInterval) {
+    if (reading1 != buttonState1) {
+      buttonState1 = reading1;
+      if (buttonState1 == HIGH) {
+        number = 1;
+        send_datas();
+      }
+    }
+  }
+
+  if ((millis() - lastDebounceTime2) > debounceInterval) {
+    if (reading2 != buttonState2) {
+      buttonState2 = reading2;
+      if (buttonState2 == HIGH) {
+        number = 2;
+        send_datas();
+      }
+    }
+  }
+
+  if ((millis() - lastDebounceTime3) > debounceInterval) {
+    if (reading3 != buttonState3) {
+      buttonState3 = reading3;
+      if (buttonState3 == HIGH) {
+        number = 3;
+        send_datas();
+      }
+    }
+  }
+
+  if ((millis() - lastDebounceTime4) > debounceInterval) {
+    if (reading4 != buttonState4) {
+      buttonState4 = reading4;
+      if (buttonState4 == HIGH) {
+        number = 4;
+        send_datas();
+      }
+    }
+  }
+  if ((millis() - lastDebounceTime5) > debounceInterval) {
+    if (reading5 != buttonState5) {
+      buttonState5 = reading5;
+      if (buttonState5 == HIGH) {
+        number = 5;
+        send_datas();
+      }
+    }
+  }
+  lastButtonState1 = reading1;
+  lastButtonState2 = reading2;
+  lastButtonState3 = reading3;
+  lastButtonState4 = reading4;
+  lastButtonState5 = reading5;
+
+}
+</pre>    
+<h3><font color="#E74C3C">Webserver .php program (sendnumber.php):</font></h3>
+<pre style="background-color:#E74C3C;">
+&lt;?php 
+$secret_number = 3;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $number = $_POST['number'];
+  $number = trim( $number );
+  if (is_numeric($number)){
+    if($number==$secret_number){
+      echo "Access";
+    }else{
+      echo "Problem";
+    }    
+  }
+}else{
+  echo "Unsupported METHOD! Use POST instead of GET/PUT/PATCH!";
+}   
+?&gt;
+</pre>
+    			    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/plugins/pace.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
